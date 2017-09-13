@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.ant-layout{
+  height:100%;
+}
+.ant-layout-sider-trigger {
+  position: relative!important;
+}
+.ant-layout-sider{
+  // overflow-y: scroll;
+}
+.ant-select-selection-selected-value {
+    padding-right: 0!important;
+}
+form .has-feedback :not(.ant-input-group-addon) > .ant-select .ant-select-arrow{
+  right:8px!important;
+}
+
