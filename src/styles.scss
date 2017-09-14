@@ -1,13 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  outline: none;
+}
 .ant-layout{
   height:100%;
 }
-.ant-layout-sider-trigger {
-  position: relative!important;
-}
+
 .ant-layout-sider{
-  // overflow-y: scroll;
+
 }
+
 .ant-select-selection-selected-value {
     padding-right: 0!important;
 }

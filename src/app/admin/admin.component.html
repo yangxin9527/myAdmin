@@ -3,61 +3,32 @@
     <div class="logo">
     </div>
     <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'">
-      <li nz-submenu>
-        <span title><i class="anticon anticon-user"></i><span class="nav-text">User</span></span>
-        <ul>
-          <li nz-menu-item>Tom</li>
-          <li nz-menu-item>Bill</li>
-          <li nz-menu-item>Alex</li>
+      <li nz-menu-item routerLink="/admin/home">
+          <span><i class="anticon anticon-file"></i>
+            <span class="nav-text">首页</span></span>
+      </li>
+      <li nz-submenu >
+        <span title><i class="anticon anticon-user"></i><span class="nav-text">车辆管理</span></span>        <ul>
+          <li nz-menu-item routerLink="/admin/car/CarLedger">车辆台账管理</li>
+          <li nz-menu-item routerLink="/admin/car/CarDriver">车辆成本定义</li>
+          <li nz-menu-item routerLink="/admin/car/CarRoute">车辆可运行线路管理</li>
+          <li nz-menu-item routerLink="/admin/car/CarCost">车辆司机分配</li>
         </ul>
       </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-submenu>
-        <span title><i class="anticon anticon-team"></i><span class="nav-text">Team</span></span>
-        <ul>
-          <li nz-menu-item>Team 1</li>
-          <li nz-menu-item>Team 2</li>
-        </ul>
-      </li>
-      <li nz-menu-item><span><i class="anticon anticon-file"></i><span class="nav-text">File</span></span></li>
+ 
+     
     </ul>
   </nz-sider>
   <nz-layout>
-    <nz-header style="background: #fff; padding:0;"></nz-header>
+    <nz-header class="top-header">
+      <div class="right">
+        <ul>
+            <li (click)="exit()">
+                <i class="anticon anticon-poweroff" title="退出"></i>
+            </li>
+        </ul>
+      </div>
+    </nz-header>
     <nz-content style="margin:0 16px;">
       <nz-breadcrumb style="margin:12px 0;">
         <nz-breadcrumb-item>User</nz-breadcrumb-item>
