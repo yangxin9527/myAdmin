@@ -3,16 +3,16 @@ import { RouterModule } from '@angular/router';
 
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AdminRoutes } from './admin.routes';
-import { CarComponent } from './car/car.component';
 import { AdminComponent } from './admin.component';
+import { AdminManageComponent } from './admin-manage/admin-manage.component';
 @NgModule({
     imports: [
         NgZorroAntdModule,
         RouterModule.forChild(AdminRoutes)
     ],
     declarations: [
-        CarComponent,
-        AdminComponent
+        AdminComponent,
+        AdminManageComponent
     ],
     providers: []
 })

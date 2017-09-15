@@ -1,4 +1,5 @@
-import { CarComponent } from './car/car.component';
+import { AdminManageComponent } from './admin-manage/admin-manage.component';
+
 import { AdminComponent } from './admin.component';
 export const AdminRoutes = [
 	{
@@ -6,8 +7,8 @@ export const AdminRoutes = [
 		component: AdminComponent,
 		children: [
 			{ path: '', redirectTo: 'car', pathMatch: 'full' },
-			{ path: 'car', component: CarComponent },
-		
+			{ path: 'admin', component: AdminManageComponent },
+
 		]
 	}
 ];

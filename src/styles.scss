@@ -2,12 +2,10 @@
 .ant-layout{
   height:100%;
 }
-.ant-layout-sider-trigger {
-  position: relative!important;
+.ant-layout-sider-collapsed.ant-layout-sider{
+  overflow: auto!important;
 }
-.ant-layout-sider{
-  // overflow-y: scroll;
-}
+
 .ant-select-selection-selected-value {
     padding-right: 0!important;
 }
