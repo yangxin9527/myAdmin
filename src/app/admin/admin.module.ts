@@ -4,7 +4,9 @@ import { RouterModule } from '@angular/router';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { AdminRoutes } from './admin.routes';
 import { AdminComponent } from './admin.component';
-import { AdminManageComponent } from './admin-manage/admin-manage.component';
+
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
     imports: [
         NgZorroAntdModule,
@@ -12,7 +14,8 @@ import { AdminManageComponent } from './admin-manage/admin-manage.component';
     ],
     declarations: [
         AdminComponent,
-        AdminManageComponent
+
+        HomeComponent
     ],
     providers: []
 })

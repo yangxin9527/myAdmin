@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  outline: none;
+}
 .ant-layout{
   height:100%;
 }
 .ant-layout-sider-collapsed.ant-layout-sider{
   overflow: auto!important;
+
+
 }
 
 .ant-select-selection-selected-value {
